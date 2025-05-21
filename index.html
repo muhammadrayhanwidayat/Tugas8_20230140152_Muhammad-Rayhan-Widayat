@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureScan | Jasa Pentester Profesional</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #6a3093;
+            --secondary-color: #a044ff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .navbar {
+            background: rgba(106, 48, 147, 0.9) !important;
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-purple {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+        }
+        
+        .btn-purple:hover {
+            background-color: #5a2580;
+            color: white;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .service-card {
+            transition: transform 0.3s;
+            border: none;
+            box-shadow: 0 5px 15px rgba(106, 48, 147, 0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+        
+        .testimonial-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-shield-alt me-2"></i>SecureScan
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimoni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn-purple ms-lg-3">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Keamanan Sistem Anda Adalah Prioritas Kami</h1>
+                    <p class="lead mb-4">Kami menyediakan jasa penetration testing profesional untuk mengidentifikasi kerentanan sebelum dieksploitasi oleh pihak yang tidak bertanggung jawab.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#services" class="btn btn-light btn-lg">Layanan Kami</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="edutech.png" alt="Pentester" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Layanan Kami</h2>
+                <p class="lead text-muted">Kami menawarkan berbagai layanan penetration testing untuk berbagai kebutuhan keamanan</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Application Testing</h3>
+                        <p>Identifikasi kerentanan pada aplikasi web Anda seperti SQL Injection, XSS, CSRF, dan lainnya.</p>
+                        <a href="#" class="btn btn-purple mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Penetration Testing</h3>
+                        <p>Uji keamanan infrastruktur jaringan Anda terhadap serangan eksternal dan internal.</p>
+                        <a href="#" class="btn btn-purple mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile App Testing</h3>
+                        <p>Analisis keamanan aplikasi mobile Anda baik untuk platform Android maupun iOS.</p>
+                        <a href="#" class="btn btn-purple mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Social Engineering</h3>
+                        <p>Uji ketahanan karyawan terhadap teknik manipulasi seperti phishing dan pretexting.</p>
+                        <a href="#" class="btn btn-purple mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Security Assessment</h3>
+                        <p>Evaluasi keamanan implementasi cloud Anda termasuk konfigurasi dan kontrol akses.</p>
+                        <a href="#" class="btn btn-purple mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card service-card h-100 p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Red Team Exercise</h3>
+                        <p>Simulasi serangan realistis untuk menguji kemampuan deteksi dan respons organisasi Anda.</p>
+                        <a href="#" class="btn btn-purple mt-auto">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="edutech.png" alt="Tentang Kami" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Mengapa Memilih Kami?</h2>
+                    <p class="lead">Kami adalah tim ahli keamanan siber dengan pengalaman lebih dari 10 tahun di industri.</p>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="fas fa-check-circle text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <h4>Tim Bersertifikasi</h4>
+                            <p>Tim kami memiliki sertifikasi OSCP, CEH, CISSP, dan sertifikasi profesional lainnya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="fas fa-check-circle text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <h4>Metodologi Terbukti</h4>
+                            <p>Menggunakan metodologi standar industri seperti OWASP dan PTES.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <div class="me-4">
+                            <i class="fas fa-check-circle text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <h4>Laporan Komprehensif</h4>
+                            <p>Laporan detail dengan rekomendasi perbaikan yang dapat ditindaklanjuti.</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-purple btn-lg mt-3">Hubungi Tim Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Apa Kata Klien Kami</h2>
+                <p class="lead text-muted">Testimoni dari klien yang telah menggunakan layanan kami</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="kanade.png" alt="Client" class="rounded-circle me-3" style="width: 90px; height: 100px;">
+                            <div>
+                                <h5 class="mb-0">Yuisaki kanade,CISSP,CEH</h5>
+                                <small class="text-muted">CTO, FinTech XYZ</small>
+                            </div>
+                        </div>
+                        <p>"Layanan penetration testing yang sangat profesional. Tim SecureScan membantu kami mengidentifikasi kerentanan kritis yang tidak kami sadari sebelumnya."</p>
+                        <div class="text-purple">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="nico.png" alt="Client" class="rounded-circle me-3" style="width: 90px; height: 90px;">
+                            <div>
+                                <h5 class="mb-0">Nico Wakatsuki,CISA,CISM</h5>
+                                <small class="text-muted">Direktur IT, Retail ABC</small>
+                            </div>
+                        </div>
+                        <p>"Laporan yang sangat detail dan rekomendasi yang jelas. Pentest mereka membantu kami meningkatkan postur keamanan secara signifikan."</p>
+                        <div class="text-purple">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card testimonial-card h-100 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="miku.png" alt="Client" class="rounded-circle me-3" style="width: 90px; height: 90px;" >
+                            <div>
+                                <h5 class="mb-0">Hatsune Miku,CISM,SSCP</h5>
+                                <small class="text-muted">Head of Security, Bank DEF</small>
+                            </div>
+                        </div>
+                        <p>"Red team exercise mereka sangat realistis dan membantu kami mengidentifikasi celah dalam proses deteksi dan respons insiden kami."</p>
+                        <div class="text-purple">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg py-5">
+        <div class="container py-5 text-center">
+            <h2 class="fw-bold mb-4">Siap Meningkatkan Keamanan Sistem Anda?</h2>
+            <p class="lead mb-5">Jadwalkan konsultasi gratis dengan ahli keamanan kami untuk mendiskusikan kebutuhan spesifik Anda.</p>
+            <a href="#contact" class="btn btn-light btn-lg px-5">Mulai Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+                    <p class="lead mb-5">Isi formulir berikut dan kami akan segera menghubungi Anda.</p>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <i class="fas fa-map-marker-alt text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <h5>Lokasi</h5>
+                            <p class="text-muted">Jl. isekai sebelah barat. 123, Yogyakarta, Indonesia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <i class="fas fa-envelope text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <h5>Email</h5>
+                            <p class="text-muted">info@isekai.id</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex mb-4">
+                        <div class="me-4">
+                            <i class="fas fa-phone-alt text-purple fs-4"></i>
+                        </div>
+                        <div>
+                            <h5>Telepon</h5>
+                            <p class="text-muted">+62 21 1234 5678</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Nomor Telepon</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Layanan yang Diminati</label>
+                            <select class="form-select" id="service">
+                                <option selected>Pilih Layanan</option>
+                                <option value="web">Web Application Testing</option>
+                                <option value="network">Network Penetration Testing</option>
+                                <option value="mobile">Mobile App Testing</option>
+                                <option value="social">Social Engineering</option>
+                                <option value="cloud">Cloud Security Assessment</option>
+                                <option value="redteam">Red Team Exercise</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-purple btn-lg w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-shield-alt me-2"></i>SecureScan</h5>
+                    <p>Perusahaan jasa penetration testing profesional yang membantu organisasi mengidentifikasi dan memperbaiki kerentanan keamanan.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fs-4"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Layanan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Web Testing</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Network Testing</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Mobile Testing</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Social Engineering</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cloud Assessment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Perusahaan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Tim Kami</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Karir</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Newsletter</h5>
+                    <p>Berlangganan newsletter kami untuk mendapatkan tips keamanan siber terbaru.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Alamat Email">
+                        <button type="submit" class="btn btn-light"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-light">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2023 SecureScan. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Kebijakan Privasi</a>
+                    <a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
